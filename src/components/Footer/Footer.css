@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  padding: 50px;
+}
+.image {
+  height: 200px;
+  width: 500px;
+}
