@@ -7,6 +7,7 @@ import Login from "./components/Login/Login/Login";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Register from "./components/Register/Register";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
           </Route>
           <Route path="/login">
             <Login></Login>
