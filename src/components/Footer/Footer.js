@@ -1,12 +1,13 @@
 import React from "react";
 
-import img from "../../img/logo.png";
+import logo from "../../img/logo.png";
 import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
       <div>
-        <h2 className="text-danger">Health First Medicine </h2>
+        <h2 className=" text-danger">The Travel </h2>
+        <img className="logo" src={logo} alt="" />
         <p className="pp">
           Majority of the drug shops studied are run by salespersons who have
           informal ‘training’ through apprenticeship. Visiting drug shops
