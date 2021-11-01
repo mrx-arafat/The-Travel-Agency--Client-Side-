@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
+
+import logo from "../../img/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useAuth from "../../hooks/useAuth";
@@ -19,7 +21,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand className="text-danger fw-bold" href="#home">
-            The Travel
+            <img className="logo" src={logo} alt="" srcset="" />
           </Navbar.Brand>
 
           <Navbar.Toggle />

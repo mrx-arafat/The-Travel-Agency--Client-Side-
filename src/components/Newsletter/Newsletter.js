@@ -5,7 +5,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 const Newsletter = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container my-5">
         <section className="newsletter conntainer-lg mx-auto">
           <div className="container">
             <div className="row">
