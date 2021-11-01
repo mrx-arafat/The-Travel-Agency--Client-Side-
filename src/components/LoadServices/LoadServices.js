@@ -16,7 +16,7 @@ const LoadServices = (props) => {
       <small className="p-3 fw-bold">{title}</small>
       <h3 className="p-3 text-danger">{price}</h3>
 
-      <Link to={`/view/${id}`}>
+      <Link to={`/order`}>
         <button className="btn btn-danger text-white mb-4">Book Now</button>
       </Link>
     </div>

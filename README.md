@@ -12,3 +12,7 @@ Visit This Site [Link](https://github.com/facebook/create-react-app).
 - Used Private Router
 - context api
 - for database I used MongoDB
+- responsive design
+-
+
+NB: Having a issue with Firebase auth & server side db connection. But I tried to do as much as possible.
