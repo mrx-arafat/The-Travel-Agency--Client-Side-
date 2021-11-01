@@ -15,7 +15,10 @@ const Home = () => {
           <img className="d-block w-100" src={slide1} alt="First slide" />
           <Carousel.Caption>
             <h3>The Travel</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>
+              Book flights, hotels, trains & rental cars anywhere in the world
+              in just seconds.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -23,7 +26,10 @@ const Home = () => {
 
           <Carousel.Caption>
             <h3>The Travel</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Book flights, hotels, trains & rental cars anywhere in the world
+              in just seconds.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -32,7 +38,8 @@ const Home = () => {
           <Carousel.Caption>
             <h3>The Travel</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Book flights, hotels, trains & rental cars anywhere in the world
+              in just seconds.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

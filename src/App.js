@@ -10,6 +10,7 @@ import Register from "./components/Register/Register";
 import Services from "./components/Services/Services";
 import NotFound from "./components/NotFound/NotFound";
 import AuthProvider from "./contexts/AuthProvider";
+import AddService from "./components/AddService/AddService";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/addServices">
+              <AddService></AddService>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

@@ -21,7 +21,9 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand className="text-danger fw-bold" href="#home">
-            <img className="logo" src={logo} alt="" srcset="" />
+            <Link to="/">
+              <img className="logo" src={logo} alt="" srcset="" />
+            </Link>
           </Navbar.Brand>
 
           <Navbar.Toggle />
@@ -32,6 +34,9 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={HashLink} to="/home#services">
                 Services
+              </Nav.Link>
+              <Nav.Link as={HashLink} to="/addServices">
+                Add Services
               </Nav.Link>
               <Nav.Link as={HashLink} to="/order">
                 Order

@@ -70,10 +70,7 @@ const Login = () => {
           Don't have account ? <Link to="/register">Create Account</Link>
         </p>
 
-        <small>
-          NB: Having some issue with email-password login but google sign-in is
-          working{" "}
-        </small>
+        <small>NB: Having some issue with Login</small>
         <div>-------or----------</div>
         <button className="btn btn-danger" onClick={signInUsingGoogle}>
           Google Sign In
