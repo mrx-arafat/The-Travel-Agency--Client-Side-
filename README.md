@@ -1,6 +1,6 @@
 # Travel Agency Site Using React
 
-Visit This Site [Link](https://github.com/facebook/create-react-app).
+Visit This Site [Link](https://travel-agency-1b112.web.app/).
 
 ## About This Project
 
@@ -13,6 +13,5 @@ Visit This Site [Link](https://github.com/facebook/create-react-app).
 - context api
 - for database I used MongoDB
 - responsive design
--
 
-NB: Having a issue with Firebase auth & server side db connection. But I tried to do as much as possible.
+NB: Having a issue with Firebase auth & server side db connection. But I tried to do as much as possible. I don't know why this time I am having this issue , previously it worked fine
