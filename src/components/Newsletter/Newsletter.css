@@ -20,12 +20,15 @@
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
+  width: 500px;
 }
 .newsletter .content.form-control:focus {
   box-shadow: none;
   border: 2px solid #243c4f;
 }
 .newsletter .content .btn {
+  margin: 20px;
+  width: 100%;
   min-height: 50px;
   border-radius: 0;
   background: #da2f2f;

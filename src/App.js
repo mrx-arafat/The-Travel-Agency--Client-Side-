@@ -11,6 +11,8 @@ import Services from "./components/Services/Services";
 import NotFound from "./components/NotFound/NotFound";
 import AuthProvider from "./contexts/AuthProvider";
 import AddService from "./components/AddService/AddService";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
+import Order from "./components/Order/Order";
 
 function App() {
   return (
@@ -38,6 +40,9 @@ function App() {
             <Route path="/addServices">
               <AddService></AddService>
             </Route>
+            <PrivateRoute path="/order">
+              <Order></Order>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

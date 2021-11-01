@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+import Services from "../Services/Services";
 import "./AddService.css";
 const AddService = () => {
   const {
@@ -31,6 +32,8 @@ const AddService = () => {
 
         <input type="submit" />
       </form>
+
+      <Services></Services>
     </div>
   );
 };
