@@ -48,7 +48,7 @@ const Login = () => {
           </Typography>
           <form onSubmit={handleLoginSubmit}>
             <TextField
-              sx={{ width: "75%", m: 1 }}
+              sx={{ width: "100%", m: 1 }}
               id="standard-basic"
               label="Your Email"
               name="email"
@@ -56,7 +56,7 @@ const Login = () => {
               variant="standard"
             />
             <TextField
-              sx={{ width: "75%", m: 1 }}
+              sx={{ width: "100%", m: 1 }}
               id="standard-basic"
               label="Your Password"
               type="password"
@@ -66,7 +66,7 @@ const Login = () => {
             />
 
             <Button
-              sx={{ width: "75%", m: 1 }}
+              sx={{ width: "100%", m: 1 }}
               type="submit"
               variant="contained"
             >
@@ -89,7 +89,11 @@ const Login = () => {
           </Button>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img style={{ width: "100%" }} src={login} alt="" />
+          <img
+            style={{ width: "100%", marginTop: "60px" }}
+            src={login}
+            alt=""
+          />
         </Grid>
       </Grid>
     </Container>
