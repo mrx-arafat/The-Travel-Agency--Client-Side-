@@ -5,10 +5,12 @@ import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import Services from "./Pages/Services/Services/Services";
 import AddService from "./Pages/Services/AddService/AddService";
+import Order from "./Pages/Order/Order";
+import PlaceOrder from "./Pages/Services/PlaceOrder/PlaceOrder";
 
 function App() {
   return (
@@ -22,18 +24,25 @@ function App() {
             <Route path="/services">
               <Services></Services>>
             </Route>
-            <Route path="/addService">
+            <PrivateRoute path="/addService">
               <AddService></AddService>>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/">
               <Home></Home>
             </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
+
             <Route path="/register">
               <Register></Register>
             </Route>
+            <PrivateRoute path="/order">
+              <Order></Order>
+            </PrivateRoute>
+            <PrivateRoute path="/placeOrder">
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
           </Switch>
         </BrowserRouter>
       </AuthProvider>

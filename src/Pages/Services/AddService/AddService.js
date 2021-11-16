@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./AddService.css";
+import Navigation from "../../../Shared/Navigation/Navigation";
 const AddService = () => {
   const {
     register,
@@ -28,6 +29,7 @@ const AddService = () => {
 
   return (
     <div>
+      <Navigation></Navigation>
       <h1>Add A Service</h1>
 
       <form onSubmit={handleSubmit(onSubmit)}>

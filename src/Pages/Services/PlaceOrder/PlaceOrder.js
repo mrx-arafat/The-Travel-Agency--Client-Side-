@@ -2,9 +2,9 @@ import { Alert } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Navigation from "../../../Shared/Navigation/Navigation";
 import LoadServices from "../LoadServices/LoadServices";
-import "./Services.css";
+import "./PlaceOrder.css";
 
-const Services = () => {
+const PlaceOrder = () => {
   const [services, setServices] = useState([]);
   const [bookingSuccess, setBookingSuccess] = useState(false);
   useEffect(() => {
@@ -30,4 +30,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default PlaceOrder;
