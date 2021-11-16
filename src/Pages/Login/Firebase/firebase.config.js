@@ -8,12 +8,12 @@
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC2OUngtYiNUS2YmEsSYLUjWxw471dYziA",
-  authDomain: "doctors-portal-arafat.firebaseapp.com",
-  projectId: "doctors-portal-arafat",
-  storageBucket: "doctors-portal-arafat.appspot.com",
-  messagingSenderId: "133012812980",
-  appId: "1:133012812980:web:301b05bfa12b66ca5b13e1",
+  apiKey: "AIzaSyChY6woWkYDH4UDpM2xJG2IgiInVvDvDzY",
+  authDomain: "travel-agency-1b112.firebaseapp.com",
+  projectId: "travel-agency-1b112",
+  storageBucket: "travel-agency-1b112.appspot.com",
+  messagingSenderId: "274925160290",
+  appId: "1:274925160290:web:c0179e74bb17b737380e3b",
 };
 
 export default firebaseConfig;

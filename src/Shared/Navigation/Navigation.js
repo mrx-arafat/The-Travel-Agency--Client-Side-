@@ -29,7 +29,7 @@ const Navigation = () => {
           </NavLink>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Doctors Portal
+            2Travel
           </Typography>
 
           <NavLink
@@ -38,9 +38,9 @@ const Navigation = () => {
               color: "white",
               padding: "6px 8px",
             }}
-            to="/appointment"
+            to="/packages"
           >
-            Appointment
+            Explore Packages
           </NavLink>
           {user?.email ? (
             <Button onClick={logout} color="inherit">
