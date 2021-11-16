@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route path="/">
+            <Route path="/login">
               <Login></Login>
             </Route>
             <Route path="/register">

@@ -29,7 +29,7 @@ const Navigation = () => {
           </NavLink>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            2Travel
+            The Travel
           </Typography>
 
           <NavLink
