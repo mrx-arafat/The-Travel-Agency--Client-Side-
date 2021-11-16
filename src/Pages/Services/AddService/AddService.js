@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./AddService.css";
 import Navigation from "../../../Shared/Navigation/Navigation";
+import Footer from "../../../Shared/Footer/Footer";
 const AddService = () => {
   const {
     register,
@@ -58,6 +59,7 @@ const AddService = () => {
           Services
         </Button>
       </NavLink>
+      <Footer></Footer>
     </div>
   );
 };

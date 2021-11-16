@@ -12,6 +12,7 @@ import useAuth from "../../hooks/useAuth";
 import Button from "@mui/material/Button";
 import { Link, NavLink } from "react-router-dom";
 import Navigation from "../../Shared/Navigation/Navigation";
+import Footer from "../../Shared/Footer/Footer";
 
 const Order = () => {
   const { user } = useAuth();
@@ -67,6 +68,7 @@ const Order = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      <Footer></Footer>
     </div>
   );
 };

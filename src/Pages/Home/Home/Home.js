@@ -1,8 +1,10 @@
 import React from "react";
+import Footer from "../../../Shared/Footer/Footer";
 import Navigation from "../../../Shared/Navigation/Navigation";
 import Services from "../../Services/Services/Services";
 
 import Banner from "../Banner/Banner";
+import Newsletter from "../NewsLetter/NewsLetter";
 import Partners from "../Partners/Partners";
 
 const Home = () => {
@@ -12,6 +14,8 @@ const Home = () => {
       <Banner></Banner>
       <Partners></Partners>
       <Services></Services>
+      <Newsletter></Newsletter>
+      <Footer></Footer>
     </div>
   );
 };
