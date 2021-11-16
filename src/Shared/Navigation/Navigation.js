@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
+import PersonIcon from "@mui/icons-material/Person";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
@@ -16,13 +17,13 @@ const Navigation = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <NavLink to="/home">
+          <NavLink to="/">
             <IconButton
               size="large"
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              sx={{ mr: 2, color: "white" }}
             >
               <MenuIcon />
             </IconButton>
@@ -43,15 +44,30 @@ const Navigation = () => {
             Explore Packages
           </NavLink>
           {user?.email ? (
-            <Button onClick={logout} color="inherit">
-              LogOut
-            </Button>
+            <Box>
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/profile"
+              >
+                <Button color="inherit">Profile </Button>
+              </NavLink>
+
+              <Button color="inherit">
+                {" "}
+                <PersonIcon /> {user.displayName}
+              </Button>
+              <Button onClick={logout} variant="outlined" color="inherit">
+                LogOut
+              </Button>
+            </Box>
           ) : (
             <NavLink
               style={{ textDecoration: "none", color: "white" }}
               to="/login"
             >
-              <Button color="inherit">Login</Button>
+              <Button variant="outlined" color="inherit">
+                Login
+              </Button>
             </NavLink>
           )}
         </Toolbar>

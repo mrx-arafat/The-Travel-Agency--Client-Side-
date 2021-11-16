@@ -13,19 +13,19 @@ const services = [
   {
     name: "Booking.com",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas",
+      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
     img: bookingdot,
   },
   {
     name: "airbnb",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas",
+      "LIt’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
     img: airbnb,
   },
   {
     name: "Teeth Whitening",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas",
+      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
     img: travel3,
   },
 ];
