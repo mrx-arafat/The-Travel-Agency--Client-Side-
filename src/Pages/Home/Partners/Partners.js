@@ -9,23 +9,23 @@ import airbnb from "../../../images/airbnb.png";
 import travel3 from "../../../images/travel-3.jpg";
 import HomeService from "../Home/HomeService";
 
-const services = [
+const Partners = [
   {
     name: "Booking.com",
     description:
-      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
+      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. ",
     img: bookingdot,
   },
   {
     name: "airbnb",
     description:
-      "LIt’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
+      "LIt’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. ",
     img: airbnb,
   },
   {
     name: "Teeth Whitening",
     description:
-      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. What give",
+      "It’s been a familiar and infuriating story during the pandemic: Hours waiting for an agent only to have the call dropped. The ordeal of rescheduling canceled flights. Delayed refunds. ",
     img: travel3,
   },
 ];
@@ -48,7 +48,7 @@ const Services = () => {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          {services.map((service) => (
+          {Partners.map((service) => (
             <HomeService key={service.name} service={service}></HomeService>
           ))}
         </Grid>

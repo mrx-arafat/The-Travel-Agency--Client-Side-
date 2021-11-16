@@ -1,0 +1,11 @@
+.service {
+  background-color: #f6f4f2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 10px gray;
+}
+
+.image {
+  width: 80%;
+}

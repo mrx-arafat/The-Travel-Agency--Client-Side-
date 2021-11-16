@@ -24,6 +24,9 @@ const Navigation = () => {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2, color: "white" }}
+              {...{
+                "aria-haspopup": "true",
+              }}
             >
               <MenuIcon />
             </IconButton>
@@ -39,7 +42,7 @@ const Navigation = () => {
               color: "white",
               padding: "6px 8px",
             }}
-            to="/packages"
+            to="/services"
           >
             Explore Packages
           </NavLink>
@@ -47,9 +50,9 @@ const Navigation = () => {
             <Box>
               <NavLink
                 style={{ textDecoration: "none", color: "white" }}
-                to="/profile"
+                to="/addService"
               >
-                <Button color="inherit">Profile </Button>
+                <Button color="inherit">Add Service </Button>
               </NavLink>
 
               <Button color="inherit">

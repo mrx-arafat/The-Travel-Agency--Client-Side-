@@ -7,6 +7,8 @@ import Register from "./Pages/Login/Register/Register";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
+import Services from "./Pages/Services/Services/Services";
+import AddService from "./Pages/Services/AddService/AddService";
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
           <Switch>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/services">
+              <Services></Services>>
+            </Route>
+            <Route path="/addService">
+              <AddService></AddService>>
             </Route>
             <Route exact path="/">
               <Home></Home>
