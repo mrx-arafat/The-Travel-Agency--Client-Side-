@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../../Shared/Footer/Footer";
 import Navigation from "../../../Shared/Navigation/Navigation";
+import OurService from "../../OurService/OurService/OurService";
 import Services from "../../Services/Services/Services";
 
 import Banner from "../Banner/Banner";
@@ -13,7 +14,7 @@ const Home = () => {
       <Navigation></Navigation>
       <Banner></Banner>
       <Partners></Partners>
-      <Services></Services>
+      <OurService></OurService>
       <Newsletter></Newsletter>
       <Footer></Footer>
     </div>

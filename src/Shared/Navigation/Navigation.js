@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import PersonIcon from "@mui/icons-material/Person";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const Navigation = () => {
@@ -42,7 +42,7 @@ const Navigation = () => {
               color: "white",
               padding: "6px 8px",
             }}
-            to="/services"
+            to="/ourService"
           >
             Explore Packages
           </NavLink>

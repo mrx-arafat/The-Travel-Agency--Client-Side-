@@ -11,6 +11,7 @@ import Services from "./Pages/Services/Services/Services";
 import AddService from "./Pages/Services/AddService/AddService";
 import Order from "./Pages/Order/Order";
 import PlaceOrder from "./Pages/Services/PlaceOrder/PlaceOrder";
+import OurService from "./Pages/OurService/OurService/OurService";
 
 function App() {
   return (
@@ -21,11 +22,14 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/services">
-              <Services></Services>>
+            <PrivateRoute path="/services">
+              <Services></Services>
+            </PrivateRoute>
+            <Route path="/ourService">
+              <OurService></OurService>
             </Route>
             <PrivateRoute path="/addService">
-              <AddService></AddService>>
+              <AddService></AddService>
             </PrivateRoute>
             <Route exact path="/">
               <Home></Home>

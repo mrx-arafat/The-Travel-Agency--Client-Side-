@@ -24,7 +24,7 @@ const LoadServices = ({ service, setBookingSuccess }) => {
           onClick={handleBookingOpen}
           className="btn btn-danger text-white mb-4"
         >
-          Book Now
+          Place Order Now
         </button>
       </div>
       <BookingModal

@@ -1,7 +1,9 @@
 import { Alert } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import Footer from "../../../Shared/Footer/Footer";
 import Navigation from "../../../Shared/Navigation/Navigation";
 import LoadServices from "../LoadServices/LoadServices";
+import { NavLink } from "react-router-dom";
 import "./Services.css";
 
 const Services = () => {
@@ -14,9 +16,16 @@ const Services = () => {
   }, []);
   return (
     <div>
-      <h1 className="p-4 text-danger fw-bold">We Are Offering</h1>
+      <Navigation></Navigation>
+      <NavLink to="/order">
+        {" "}
+        <button className="btn btn-danger text-white my-4">
+          Go to Order Page
+        </button>
+      </NavLink>
+      <h1 className="p-4 text-danger fw-bold">Book a Package Now </h1>
       {bookingSuccess?.email && (
-        <Alert severity="success">Pre Ordered Successfully!</Alert>
+        <Alert severity="success"> Order Placed Successfully!</Alert>
       )}
       <div className="service-container mb-5">
         {services.map((service) => (
@@ -26,6 +35,7 @@ const Services = () => {
           ></LoadServices>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };
