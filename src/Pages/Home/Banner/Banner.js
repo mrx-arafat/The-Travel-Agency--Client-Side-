@@ -4,7 +4,7 @@ import chair from "../../../images/travel-banner.jpeg";
 import bg from "../../../images/bg.jpg";
 import { Typography, Button, Container } from "@mui/material";
 import Box from "@mui/material/Box";
-
+import { NavLink } from "react-router-dom";
 const bannerBg = {
   background: `url(${bg})`,
 };
@@ -39,9 +39,15 @@ const Banner = () => {
               experiences are more important than physical “things.” The older I
               get, the more I value experiences over things.
             </Typography>
-            <Button variant="contained" style={{ backgroundColor: "#5CE7ED" }}>
-              Explore Our Packages
-            </Button>
+            <NavLink style={{ textDecoration: "none" }} to="/services">
+              {" "}
+              <Button
+                variant="contained"
+                style={{ backgroundColor: "#5CE7ED" }}
+              >
+                Explore Our Packages
+              </Button>
+            </NavLink>
           </Box>
         </Grid>
         <Grid item xs={12} md={6} style={verticalCenter}>
