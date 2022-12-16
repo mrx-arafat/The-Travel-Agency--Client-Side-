@@ -22,7 +22,7 @@ const Order = () => {
   //for data load
 
   useEffect(() => {
-    const url = `http://localhost:5000/orders?email=${user.email}`;
+    const url = `${process.env.REACT_APP_API_BACKEND}/orders?email=${user.email}`;
 
     fetch(url)
       .then((res) => res.json())

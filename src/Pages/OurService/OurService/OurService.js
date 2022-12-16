@@ -4,7 +4,7 @@ import LoadOurService from "../LoadOurService/LoadOurService";
 const OurService = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch(`${process.env.REACT_APP_API_BACKEND}/services`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

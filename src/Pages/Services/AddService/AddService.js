@@ -20,12 +20,14 @@ const AddService = () => {
   const { user } = useAuth();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Service Added successfully");
-        reset();
-      }
-    });
+    axios
+      .post(`${process.env.REACT_APP_API_BACKEND}/services`, data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Service Added successfully");
+          reset();
+        }
+      });
   };
 
   return (
